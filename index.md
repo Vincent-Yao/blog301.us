@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Blog301.us
+title: To Us
 <!-- tagline: Supporting tagline -->
 ---
 {% include JB/setup %}
