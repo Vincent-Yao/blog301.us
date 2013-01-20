@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Ruby | BLOG301.US]]></title>
+  <link href="http://Vincent-Yao.github.com/blog301/blog/categories/ruby/atom.xml" rel="self"/>
+  <link href="http://Vincent-Yao.github.com/blog301/"/>
+  <updated>2013-01-19T22:27:18-06:00</updated>
+  <id>http://Vincent-Yao.github.com/blog301/</id>
+  <author>
+    <name><![CDATA[Wuping Yao & Yujing Zheng]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Cannot Load Such File - Openssl]]></title>
+    <link href="http://Vincent-Yao.github.com/blog301/blog/2013/01/17/cannot-load-such-file-openssl/"/>
+    <updated>2013-01-17T09:37:00-06:00</updated>
+    <id>http://Vincent-Yao.github.com/blog301/blog/2013/01/17/cannot-load-such-file-openssl</id>
+    <content type="html"><![CDATA[<h2>问题描述:</h2>
+
+<p>用Octopress搭建博客,启动WEBrick时遇到如下错误:</p>
+
+<p><code>ruby
+/home/dinduks/.rvm/gems/ruby-1.9.3-p362/gems/activesupport-3.1.3/lib/active_support/dependencies.rb:240:in `require’: cannot load such file – openssl (LoadError)
+</code></p>
+
+<h2>原因:</h2>
+
+<p>本安装的Rub在编译的时候没有用openssl.</p>
+
+<h2>解方方法:</h2>
+
+<p>1.安装openssl
+<code>ruby
+rvm pkg install openssl
+</code></p>
+
+<p>2.删除已有的ruby
+<code>ruby
+rvm remove 1.9.3
+</code></p>
+
+<p>3.重新安装ruby,并明确指出编译的时候使用openssl
+<code>ruby
+rvm install 1.9.3 --with-openssl-dir=$HOME/.rvm/usr
+</code></p>
+
+<p>4.使用该ruby
+<code>ruby
+rvm use 1.9.3 --default
+</code></p>
+
+<h2>参考文献:</h2>
+
+<p><a href="http://www.dinduks.com/rails-cannot-load-such-file-openssl/">Live geek or die tryin'</a>的博客.</p>
+]]></content>
+  </entry>
+  
+</feed>

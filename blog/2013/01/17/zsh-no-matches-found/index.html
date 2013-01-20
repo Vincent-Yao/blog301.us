@@ -5,7 +5,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>BLOG301.US</title>
+  <title>zsh: no matches found - BLOG301.US</title>
   <meta name="author" content="Wuping Yao & Yujing Zheng">
 
   
@@ -21,7 +21,7 @@ alias rake=&# &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://Vincent-Yao.github.com/blog301/">
+  <link rel="canonical" href="http://Vincent-Yao.github.com/blog301/blog/2013/01/17/zsh-no-matches-found/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -65,15 +65,12 @@ alias rake=&# &hellip;">
 </nav>
   <div id="main">
     <div id="content">
-      <div class="blog-index">
+      <div>
+<article class="hentry" role="article">
   
-  
-  
-    <article>
-      
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2013/01/17/zsh-no-matches-found/">Zsh: No Matches Found</a></h1>
+      <h1 class="entry-title">Zsh: No Matches Found</h1>
     
     
       <p class="meta">
@@ -96,7 +93,7 @@ alias rake=&# &hellip;">
   </header>
 
 
-  <div class="entry-content"><h2>问题描述:</h2>
+<div class="entry-content"><h2>问题描述:</h2>
 
 <p>使用oh-my-zsh运行rake命令时遇到错误:</p>
 
@@ -119,22 +116,16 @@ alias rake=&# &hellip;">
 
 <p>oh-my-zsh的<a href="https://github.com/robbyrussell/oh-my-zsh/issues/433">Github</a>.</p>
 </div>
-  
-  
 
 
-    </article>
-  
-  
-    <article>
+  <footer>
+    <p class="meta">
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/01/17/cannot-load-such-file-openssl/">Cannot Load Such File - Openssl</a></h1>
-    
-    
-      <p class="meta">
-        
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Wuping Yao & Yujing Zheng</span></span>
+
+      
 
 
 
@@ -146,72 +137,44 @@ alias rake=&# &hellip;">
   
 
 
-<time datetime="2013-01-17T09:37:00-06:00" pubdate data-updated="true">Jan 17<span>th</span>, 2013</time>
-        
-      </p>
+<time datetime="2013-01-17T09:52:00-06:00" pubdate data-updated="true">Jan 17<span>th</span>, 2013</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/linux/'>Linux</a>
+  
+</span>
+
+
+    </p>
     
-  </header>
-
-
-  <div class="entry-content"><h2>问题描述:</h2>
-
-<p>用Octopress搭建博客,启动WEBrick时遇到如下错误:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="sr">/home/</span><span class="n">dinduks</span><span class="o">/.</span><span class="n">rvm</span><span class="o">/</span><span class="n">gems</span><span class="o">/</span><span class="n">ruby</span><span class="o">-</span><span class="mi">1</span><span class="o">.</span><span class="mi">9</span><span class="o">.</span><span class="mi">3</span><span class="o">-</span><span class="n">p362</span><span class="o">/</span><span class="n">gems</span><span class="o">/</span><span class="n">activesupport</span><span class="o">-</span><span class="mi">3</span><span class="o">.</span><span class="mi">1</span><span class="o">.</span><span class="mi">3</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">active_support</span><span class="o">/</span><span class="n">dependencies</span><span class="o">.</span><span class="n">rb</span><span class="p">:</span><span class="mi">240</span><span class="ss">:in</span> <span class="sb">`require’: cannot load such file – openssl (LoadError)</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<h2>原因:</h2>
-
-<p>本安装的Rub在编译的时候没有用openssl.</p>
-
-<h2>解方方法:</h2>
-
-<p>1.安装openssl</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">rvm</span> <span class="n">pkg</span> <span class="n">install</span> <span class="n">openssl</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>2.删除已有的ruby</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">rvm</span> <span class="n">remove</span> <span class="mi">1</span><span class="o">.</span><span class="mi">9</span><span class="o">.</span><span class="mi">3</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>3.重新安装ruby,并明确指出编译的时候使用openssl</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">rvm</span> <span class="n">install</span> <span class="mi">1</span><span class="o">.</span><span class="mi">9</span><span class="o">.</span><span class="mi">3</span> <span class="o">--</span><span class="n">with</span><span class="o">-</span><span class="n">openssl</span><span class="o">-</span><span class="n">dir</span><span class="o">=</span><span class="vg">$HOME</span><span class="o">/.</span><span class="n">rvm</span><span class="o">/</span><span class="n">usr</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>4.使用该ruby</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">rvm</span> <span class="n">use</span> <span class="mi">1</span><span class="o">.</span><span class="mi">9</span><span class="o">.</span><span class="mi">3</span> <span class="o">--</span><span class="n">default</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<h2>参考文献:</h2>
-
-<p><a href="http://www.dinduks.com/rails-cannot-load-such-file-openssl/">Live geek or die tryin&#8217;</a>的博客.</p>
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://Vincent-Yao.github.com/blog301/blog/2013/01/17/zsh-no-matches-found/" data-via="yaowuping" data-counturl="http://Vincent-Yao.github.com/blog301/blog/2013/01/17/zsh-no-matches-found/" >Tweet</a>
+  
+  
+  
 </div>
-  
-  
 
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2013/01/17/cannot-load-such-file-openssl/" title="Previous Post: Cannot Load Such File - Openssl">&laquo; Cannot Load Such File - Openssl</a>
+      
+      
+    </p>
+  </footer>
+</article>
 
-    </article>
-  
-  <div class="pagination">
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </div>
+  </section>
+
+</div>
+
 <aside class="sidebar">
   
     <section>
@@ -233,7 +196,7 @@ alias rake=&# &hellip;">
 <section>
   <h1>Latest Tweets</h1>
   <ul id="tweets">
-    <li class="loading">Status updating&#8230;</li>
+    <li class="loading">Status updating...</li>
   </ul>
   <script type="text/javascript">
     $.domReady(function(){
@@ -253,6 +216,7 @@ alias rake=&# &hellip;">
   
 </aside>
 
+
     </div>
   </div>
   <footer role="contentinfo"><p>
@@ -267,7 +231,10 @@ alias rake=&# &hellip;">
       var disqus_shortname = 'blog301';
       
         
-        var disqus_script = 'count.js';
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://Vincent-Yao.github.com/blog301/blog/2013/01/17/zsh-no-matches-found/';
+        var disqus_url = 'http://Vincent-Yao.github.com/blog301/blog/2013/01/17/zsh-no-matches-found/';
+        var disqus_script = 'embed.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
