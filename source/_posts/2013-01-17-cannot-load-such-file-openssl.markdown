@@ -4,6 +4,7 @@ title: "Cannot Load Such File - Openssl"
 date: 2013-01-17 09:37
 comments: true
 categories: [Ruby, Octopress]
+author: 姚武平
 ---
 ##问题描述:
 用Octopress搭建博客,启动WEBrick时遇到如下错误:
