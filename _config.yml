@@ -2,7 +2,7 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://yoursite.com
+url: http://Vincent-Yao.github.com/blog301
 title: BLOG301.US
 subtitle: 一个属于301的博客.
 author: Wuping Yao & Yujing Zheng
@@ -89,7 +89,7 @@ delicious_user:
 delicious_count: 3
 
 # Disqus Comments
-disqus_short_name:
+disqus_short_name: blog301
 disqus_show_comment_count: false
 
 # Google Analytics
