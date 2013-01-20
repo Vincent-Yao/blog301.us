@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Linux | BLOG301.US]]></title>
+  <link href="http://yoursite.com/blog/categories/linux/atom.xml" rel="self"/>
+  <link href="http://yoursite.com/"/>
+  <updated>2013-01-20T11:35:17+08:00</updated>
+  <id>http://yoursite.com/</id>
+  <author>
+    <name><![CDATA[Wuping Yao & Yujing Zheng]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[zsh: no matches found]]></title>
+    <link href="http://yoursite.com/blog/2013/01/17/zsh-no-matches-found/"/>
+    <updated>2013-01-17T09:52:00+08:00</updated>
+    <id>http://yoursite.com/blog/2013/01/17/zsh-no-matches-found</id>
+    <content type="html"><![CDATA[<h2>问题描述:</h2>
+
+<p>使用oh-my-zsh运行rake命令时遇到错误:</p>
+
+<p><code>ruby
+zsh: no matches found: live:debug:cucumber:feature[features_file]
+</code></p>
+
+<h2>解决方案:</h2>
+
+<p>Add
+在zsh配置文件.zshrc中添加以下代码:
+<code>ruby
+alias rake='noglob rake'
+</code></p>
+
+<h2>参考文献:</h2>
+
+<p>oh-my-zsh的<a href="https://github.com/robbyrussell/oh-my-zsh/issues/433">Github</a>.</p>
+]]></content>
+  </entry>
+  
+</feed>
