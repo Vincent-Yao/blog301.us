@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Octopress | BLOG301.US]]></title>
-  <link href="http://yoursite.com/blog/categories/octopress/atom.xml" rel="self"/>
-  <link href="http://yoursite.com/"/>
-  <updated>2013-02-03T10:02:27+08:00</updated>
-  <id>http://yoursite.com/</id>
+  <link href="http://Vincent-Yao.github.com/blog301/blog/categories/octopress/atom.xml" rel="self"/>
+  <link href="http://Vincent-Yao.github.com/blog301/"/>
+  <updated>2013-01-19T22:36:20-06:00</updated>
+  <id>http://Vincent-Yao.github.com/blog301/</id>
   <author>
     <name><![CDATA[Wuping Yao & Yujing Zheng]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Cannot Load Such File - Openssl]]></title>
-    <link href="http://yoursite.com/blog/2013/01/17/cannot-load-such-file-openssl/"/>
-    <updated>2013-01-17T09:37:00+08:00</updated>
-    <id>http://yoursite.com/blog/2013/01/17/cannot-load-such-file-openssl</id>
+    <link href="http://Vincent-Yao.github.com/blog301/blog/2013/01/17/cannot-load-such-file-openssl/"/>
+    <updated>2013-01-17T09:37:00-06:00</updated>
+    <id>http://Vincent-Yao.github.com/blog301/blog/2013/01/17/cannot-load-such-file-openssl</id>
     <content type="html"><![CDATA[<h2>问题描述:</h2>
 
 <p>用Octopress搭建博客,启动WEBrick时遇到如下错误:</p>
